@@ -329,17 +329,6 @@ Standard templates and fields will be used for defect reports. JIRA will be used
 | Retesting | Testers validate the fix and ensure no new defects are introduced |
 | Closure | Defects are closed after successful retesting |
 
-### Testing Levels
-1. Unit Testing
-2. Integration Testing
-3. System Testing
-4. User Acceptance Testing
-
-### Testing Types
-- Functional Testing
-- Security Testing
-- Performance Testing
-- Usability Testing
 
 </details>
 
