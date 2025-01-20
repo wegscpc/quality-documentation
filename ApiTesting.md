@@ -600,7 +600,6 @@ Key validation points:
 **Notes**: 
 - Verify email notification
 - Check audit logs
-```
 
 💡 **Tips for Template Usage**:
 - Maintain consistency across test cases
