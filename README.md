@@ -7,6 +7,7 @@ This is a summary of all the Quality documentation examples
 - [Web Testing Guide](#web-testing-guide)
 - [V-Model Guide](#v-model-guide)
 - [Testing Pyramid Guide](#testing-pyramid-guide)
+- [Testing Coverage Guide](#testing-coverage-guide)
 
 ## Documentation Overview
 
@@ -17,6 +18,7 @@ This is a summary of all the Quality documentation examples
 | [Web Testing Guide](WebTesting.md) | Complete Web Testing Documentation | In-depth guide covering static and dynamic website testing, automation tools comparison, business domain testing strategies, and AI-enhanced testing approaches |
 | [V-Model Guide](V-model.md) | V-Model Development and Testing Documentation | Comprehensive guide explaining the V-Model methodology, its phases, implementation strategies, and best practices for software development and testing |
 | [Testing Pyramid Guide](testing-pyramid.md) | Testing Pyramid Strategy Documentation | Detailed explanation of the Testing Pyramid concept, including test layers, automation strategies, and implementation guidelines |
+| [Testing Coverage Guide](Testing-coverage.md) | Test Coverage Documentation | Complete guide on test coverage techniques, metrics, tools, and best practices for ensuring comprehensive testing coverage |
 
 ## Test Plan
 The [Test Plan](TestPlan.md) provides a detailed framework for testing the Retail Banking Application. It includes:
@@ -95,3 +97,13 @@ The [Testing Pyramid Guide](testing-pyramid.md) offers detailed insights into te
 - End-to-End Testing Guidelines
 - Manual and Exploratory Testing
 - Implementation and Tool Selection
+
+## Testing Coverage Guide
+The [Testing Coverage Guide](Testing-coverage.md) provides comprehensive information about test coverage, including:
+
+- Coverage Types and Techniques
+- Coverage Metrics and Measurements
+- Implementation Strategies
+- Coverage Tools and Integration
+- Best Practices and Common Pitfalls
+- Coverage Maintenance Guidelines
