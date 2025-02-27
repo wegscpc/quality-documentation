@@ -41,16 +41,16 @@ graph TD
     C -.->|Validates| F
     D -.->|Validates| E
     
-    %% Layout adjustments
-    classDef leftSide fill:#f9d5e5,stroke:#333,stroke-width:2px;
-    classDef rightSide fill:#eeac99,stroke:#333,stroke-width:2px;
-    classDef center fill:#e06377,stroke:#333,stroke-width:2px;
+    %% Layout adjustments with dark theme friendly colors
+    classDef leftSide fill:#2d5a7b,stroke:#88ccff,stroke-width:2px,color:#fff;
+    classDef rightSide fill:#5a2d7b,stroke:#cc88ff,stroke-width:2px,color:#fff;
+    classDef center fill:#7b2d5a,stroke:#ff88cc,stroke-width:2px,color:#fff;
     
     class A,B,C leftSide;
     class E,F,G,H rightSide;
     class D center;
     
-    %% Positioning
+    %% Positioning with styled subgraphs
     subgraph Development
         A
         B
@@ -67,6 +67,11 @@ graph TD
     subgraph Implementation
         D
     end
+
+    %% Style subgraphs
+    style Development fill:#1a3347,stroke:#88ccff,stroke-width:2px,color:#fff;
+    style Testing fill:#331a47,stroke:#cc88ff,stroke-width:2px,color:#fff;
+    style Implementation fill:#471a33,stroke:#ff88cc,stroke-width:2px,color:#fff;
 ```
 
 #### Key Characteristics:
