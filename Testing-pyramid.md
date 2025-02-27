@@ -18,13 +18,45 @@ The Testing Pyramid is a framework introduced by Mike Cohn in his book "Succeedi
 
 ```mermaid
 graph TD
-    A[Manual/Exploratory Tests] --> B[E2E Tests]
-    B --> C[Integration Tests]
-    C --> D[Unit Tests]
-    style A fill:#ff9999
-    style B fill:#ffcc99
-    style C fill:#99ff99
-    style D fill:#99ccff
+    %% Define nodes with quantity indicators
+    A[Manual/Exploratory Tests 10%]
+    B[E2E Tests 20%]
+    C[Integration Tests 30%]
+    D[Unit Tests 40%]
+
+    %% Create pyramid structure
+    A --> B
+    B --> C
+    C --> D
+
+    %% Define dark theme friendly styles
+    classDef manual fill:#7b2d2d,stroke:#ff8888,stroke-width:2px,color:#fff;
+    classDef e2e fill:#7b582d,stroke:#ffbb88,stroke-width:2px,color:#fff;
+    classDef integration fill:#2d7b3f,stroke:#88ffaa,stroke-width:2px,color:#fff;
+    classDef unit fill:#2d4d7b,stroke:#88bbff,stroke-width:2px,color:#fff;
+
+    %% Apply styles
+    class A manual;
+    class B e2e;
+    class C integration;
+    class D unit;
+
+    %% Add subgraphs for better organization
+    subgraph UI["UI Level (Slow, Brittle)"]
+        A
+    end
+    subgraph Service["Service Level"]
+        B
+        C
+    end
+    subgraph Unit["Unit Level (Fast, Stable)"]
+        D
+    end
+
+    %% Style subgraphs
+    style UI fill:#4a1a1a,stroke:#ff8888,stroke-width:2px,color:#fff;
+    style Service fill:#1a4a33,stroke:#88ffaa,stroke-width:2px,color:#fff;
+    style Unit fill:#1a2a4a,stroke:#88bbff,stroke-width:2px,color:#fff;
 ```
 
 #### Key Characteristics:
