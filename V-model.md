@@ -20,15 +20,53 @@ The V-Model is a software development and testing methodology that represents a 
 graph TD
     A[Requirements Analysis] --> B[System Design]
     B --> C[Detailed Design]
-    C --> D[Implementation]
+    C --> D[Implementation/Coding]
     D --> E[Unit Testing]
     E --> F[Integration Testing]
     F --> G[System Testing]
     G --> H[Acceptance Testing]
-    A -.-> H
-    B -.-> G
-    C -.-> F
-    D -.-> E
+    
+    %% Positioning to create V shape
+    A[Requirements Analysis] --> |Development Phase| B[System Design]
+    B[System Design] --> |Development Phase| C[Detailed Design]
+    C[Detailed Design] --> |Development Phase| D[Implementation/Coding]
+    D[Implementation/Coding] --> |Testing Phase| E[Unit Testing]
+    E[Unit Testing] --> |Testing Phase| F[Integration Testing]
+    F[Integration Testing] --> |Testing Phase| G[System Testing]
+    G[System Testing] --> |Testing Phase| H[Acceptance Testing]
+    
+    %% Verification and Validation links
+    A -.->|Validates| H
+    B -.->|Validates| G
+    C -.->|Validates| F
+    D -.->|Validates| E
+    
+    %% Layout adjustments
+    classDef leftSide fill:#f9d5e5,stroke:#333,stroke-width:2px;
+    classDef rightSide fill:#eeac99,stroke:#333,stroke-width:2px;
+    classDef center fill:#e06377,stroke:#333,stroke-width:2px;
+    
+    class A,B,C leftSide;
+    class E,F,G,H rightSide;
+    class D center;
+    
+    %% Positioning
+    subgraph Development
+        A
+        B
+        C
+    end
+    
+    subgraph Testing
+        E
+        F
+        G
+        H
+    end
+    
+    subgraph Implementation
+        D
+    end
 ```
 
 #### Key Characteristics:
